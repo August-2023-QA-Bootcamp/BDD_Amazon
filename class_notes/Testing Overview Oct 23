@@ -1,0 +1,90 @@
+QAE (Quality Assurance Engineer) / SDET / Tester / System Tester / FQA / QA / QE / UAT / Funtional Tester / Non Functional Tester
+
+Software / Applications - 
+GUI
+- Desktop Application
+- Web Application
+- Mobile Applications
+	- Web App / Web View App (Resposible)
+	- Native Application
+	- Hybrid
+
+Non-GUI
+- Web Services / Micro Services
+
+Testing
+- Validating against requirements
+(Pre-conditions + Actions + Assertions (Expected vs Actual = Validations))
+
+Project Manager > BA > Developers > QA
+
+Categories of testing
+- Funtional
+	- Unit Test
+	- Integration Test
+- Non Functional
+	- UI
+	- UX
+	- Security
+	- Network
+	- 508 Compilance Test
+	- Performance
+		- Load Test 15 users / VUser
+		- Strees Test
+		- Spike Test 15 + 15 + 8
+		- Endurance Test
+
+Types of Testing
+- Regression Test - All funtionalities
+- Smoke Test - Main / Major / High Priority Tests
+- UAT Test - Acceptence Test (BA / QA)
+- Sanity Test - 
+- Re-Test
+- Ad-Hoc Test
+- Beta Testing
+- Alpha Testing
+
+Environments
+- DEV - www.amazon-dev.com (E1, Dev, Dev-CI) - White Box testing
+- QA - www.amazon-qa.com (E2 / Golden Dev) - Black Box Testing
+- UAT - www.amazon-uat.com
+- STG - www.amazon-stg.com
+- Perf
+- PRODUCTION / PROD / Live / Bread & Butter
+(Local Deployment localhost:8080)
+
+Deployment - Moving codes from one environments to another
+Release - Production Deployment 
+
+Automation Benefits
+- Reduce the manual efforts
+- Reducing execution time
+- Helps run in future without human intervention
+- ROI
+
+Automation Feasibility
+- Repeatable tests
+- Resources : Budgets, Time, Skillsets, Skilled Person, Dedicated environment, Tools
+- Risks & Risk Mitigation
+
+Automation Tools
+- Desktop - UFT, TestComplet : VBScript, JS, Python, Delphi
+	winnium/java, playwrite, karate
+- Web Application - Selenium, Cypress, Playwirte, Karate, Webdriver.io : Java, JS, Python
+- Mobile Application - UFT, TestComplete, QMetry, Karate, Appium : Java, VBScript, JS, Python
+- Web/Micro Services - Karate, Rest Assured : Java, JS
+- Perfomance - JMeter, Load Runner, K6, Gatling : Java, JS, Groovy
+
+Automation Test Process
+- POC - Proof of Concept
+- Test Strategy
+- Test Management
+- Reports
+- Tracability Matrix RTR
+- CI/CD
+- Source Code Management - Github, Gitlab, Bitbucket, SVC
+
+
+Ref:
+- https://www.geeksforgeeks.org/performance-testing-software-testing/
+

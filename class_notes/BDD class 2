@@ -1,0 +1,5 @@
+Unchecked Exception (Runtime Time) - NoSuchElementException, NullPointerException
+Checked Exception (Compile Time) - IOException
+
+Hooks
+- @After, @Before, @AfterAll, @BeforeAll : from io.cucumber

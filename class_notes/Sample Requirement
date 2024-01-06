@@ -1,0 +1,33 @@
+
+Amazon Cars: XYZ-23
+1.1. The title menu will be 'Amazon Cars' (XYZ-30)
+1.2. When user hover over to the tab the cars model list will display
+1.3. Upon clicking user will land on amazon cars page
+4. All the listing should be in alphabetical order (XYZ-31)
+5. There will be filter option (XYZ-32)
+6. There will be sorting option (XYZ-33)
+
+Requiremnet / Acceptenc Criteria / AC / Behabiouir:
+1.1. Given user in homepage (Pre Condtion)
+When user checks in menu beside Registry (Action)
+Then user will see 'Amazon Cars' (Assertion / Verification)
+1.2. Given user in homepage
+When user hover over the 'Amazon Cars' title
+Then User will see cars model list
+1.3. Given user in homepage
+When user click 'Amazon Cars'
+Then user will land on Amazon Cars page
+4. Given user in Amzon Cars page
+When user checks the list
+Then the list of cars will be in alphabetical order
+5. Given user in Amzon Cars page
+When user checks the list
+Then the list of cars will have filter option
+6. Given user in Amzon Cars page
+And some precodition
+When user checks the list
+And some more action
+Then the list of cars will have sorting option
+And user will see listing in acending order
+When user clicks on sort icon
+Then user will see listing in descending order
