@@ -1,0 +1,59 @@
+BDD - Behaviour Driven Development
+
+Requirement: Guest user can also add to cart and cart will show the number of the items has been added
+
+1. Positive Test
+2. Negative - Guest user cannot go to payment page
+3. Negative - Cart item will go away once new session created
+4. Negative - Guest user cannot buy now
+
+Manual Test Steps
+1 - Log into amazon.com
+2 - Search and add an item to cart
+3 - Verify the items number in the cart
+
+
+TDD Automation Test Steps
+1 - Log into amazon.com
+2 - Click on search box
+3 - Send key in 'iphone 15'
+4 - Click search icon
+5 - Verify item has 'iphone 15' in title
+6 - Click the first result item
+7 - Click storage
+8 - Click 'add to cart'
+9 - Verify cart has increase the item number
+
+
+BDD Shortcut
+Given user is in homepage
+When user search for an item - 3 steps
+And add the item to the cart - 4 steps
+Then cart item number will increase
+
+BDD Full form
+Given user is in the homepage
+And user clicks on search box
+And user type in 'iphone 15'
+When user click the search icon
+Then user will see 'iphone 15' from the result
+When user click the first item
+And select storage
+And click 'add to cart' button
+Then cart item number will increase
+
+Gherkin syntax - Feature, Scenario, Scenario Outline, Examples, Given, When, Then, And, @anyTag, *, #
+
+Step Definition - A class that connects BDD steps with the actual code implementation
+
+TDD					|			BDD
+===================================================
+Test				|	Scenario / Sceanrio Outline
+Test Class			| 	Feature
+Java/JS				|	Gherkins (Syntax)
+/, /**/, //			|	# (Comments)
+groups				|	@anytags
+
+
+Maven Lifecycle - https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
