@@ -2,7 +2,7 @@ package qa.amazon.bdd.constant;
 
 public enum Key {
 
-	URL("url"), PAGELOAD_WAIT("pageloadWait"), EXPLICIT_WAIT("explicitWait");
+	URL("url"), PAGELOAD_WAIT("pageloadWait"), EXPLICIT_WAIT("explicitWait"), BROWSER("browser");
 	
 	private String key;
 	

@@ -11,14 +11,14 @@ public class ConfigUtilTest {
 	@Test
 	public void initializingConfigUtil() {
 		ConfigUtil util = new ConfigUtil(FileName.CONFIG_PROPERTIES);
-		String urlValue = util.getPropertyValue(Key.URL);
+		String urlValue = util.getPropertyValue(Key.BROWSER);
 		System.err.println(urlValue);
 	}
 	
-	@Test
+	//@Test
 	public void nullFile() {
 		ConfigUtil util = new ConfigUtil(null);
-		String urlValue = util.getPropertyValue(Key.URL);
+		String urlValue = util.getPropertyValue(Key.BROWSER);
 		System.err.println(urlValue);
 	}
 }

@@ -48,7 +48,7 @@ Step Definition - A class that connects BDD steps with the actual code implement
 
 TDD					|			BDD
 ===================================================
-Test				|	Scenario / Sceanrio Outline
+Test				|	Scenario / Scenario Outline
 Test Class			| 	Feature
 Java/JS				|	Gherkins (Syntax)
 /, /**/, //			|	# (Comments)
