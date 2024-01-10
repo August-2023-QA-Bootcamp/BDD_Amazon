@@ -1,7 +1,7 @@
 @cart
 Feature: Amazon Add To Cart for Guest User
 
-	@smoke
+  @smoke
   Scenario: Guest Add to Cart verification
     Given user is in the homepage
     And user clicks on search box
@@ -10,10 +10,10 @@ Feature: Amazon Add To Cart for Guest User
     Then user will see 'iphone 15' from the result
     When user click the first item
     And select storage
-    And click 'add to cart' button
+    And click add to cart button
     Then cart item number will increase
 
-	@regression
+  @regression
   Scenario: Guest Add to Cart verification 2
     Given user is in the homepage
     And user clicks on search box
@@ -22,5 +22,5 @@ Feature: Amazon Add To Cart for Guest User
     Then user will see 'iphone 15' from the result
     When user click the first item
     And select storage
-    And click 'add to cart' button
+    And click add to cart button
     Then cart item number will increase

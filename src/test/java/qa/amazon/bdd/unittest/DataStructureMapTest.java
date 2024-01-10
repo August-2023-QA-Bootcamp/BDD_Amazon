@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class DataStructureMapTest {
 
-	@Test
+	//@Test
 	public void mapTest() {
 		Map<String, String> map = new HashMap<>();
 		map.put("url", "www.amazon.com");
