@@ -1,25 +1,19 @@
 package stepdefs;
 
+import java.util.List;
+
 import org.junit.Assert;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import qa.amazon.bdd.base.TestBaseClass;
+import qa.amazon.bdd.util.LoggerClass;
 
 public class AddToCartStepDef extends TestBaseClass {
 
 	static int itemNumber;
-	
-	@Given("user is in the homepage")
-	public void user_is_in_the_homepage() {
-		Assert.assertEquals(driver.getTitle(), "Amazon.com");
-	}
-
-	@Given("user clicks on search box")
-	public void user_clicks_on_search_box() {
-		homepage.clickSearchBox();
-	}
 
 	@Given("user type in {string}")
 	public void user_type_in(String string) {
@@ -56,5 +50,14 @@ public class AddToCartStepDef extends TestBaseClass {
 	@Then("cart item number will increase")
 	public void cart_item_number_will_increase() {
 	    Assert.assertEquals(itemNumber+1, iphonePage.getCartItemCount());
+	}
+	
+	@Given("user type in product")
+	public void dataTableItem(DataTable table) {
+		List<String> list = table.asList();
+		for(String item : list) {
+			homepage.inputSearchItem(item);
+			LoggerClass.log("------ Item is : " + item);
+		}
 	}
 }
